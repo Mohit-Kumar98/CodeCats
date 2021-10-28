@@ -1,17 +1,14 @@
-
 #include <stdio.h>
 int main() 
 {
-	int n;
+	int x,i,new=0;
     printf("Factorial:");
-	scanf("%d",&n);
-	int i=5, count=0;
-	while(n/i>=1)
-	{
-	    count += n/i;
-	    i *= 5;
+	scanf("%d",&x);
+	for(i=x;i>5;i=i/5)
+    {
+        new=new+i/5;
     }
-	printf("%d",count);
+	printf("%d",new);
 	printf("\n");
 	return 0;
 }
